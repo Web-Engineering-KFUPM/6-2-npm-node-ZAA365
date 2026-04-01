@@ -73,11 +73,11 @@ Hints:
 - Import the parser functions from "./utils/parser.js"
 - Import lodash (the third-party package you installed)
 
-Example:
-  import { add, subtract } from "./utils/operations.js";
+Example:*/
+  import { add, subtract,multiply,divide } from "./utils/operations.js";
   import { parseNumbers, isValidOperation } from "./utils/parser.js";
   import _ from "lodash";
-
+/*
 ===================================================================
 TODO 2: Parse Command Line Arguments (in calculator.js)
 ===================================================================
@@ -91,10 +91,10 @@ Hints:
   - process.argv[2] is the first argument (operation)
   - process.argv[3+] are the numbers
 
-Example:
+Example:*/
   const operation = process.argv[2];
   const numbers = process.argv.slice(3);
-
+/*
 ===================================================================
 TODO 3: Validate Input and Calculate (in calculator.js)
 ===================================================================
