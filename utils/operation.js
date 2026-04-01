@@ -2,8 +2,7 @@ export function add(numbers) {
     return numbers.reduce((sum, num) => sum + num, 0)
     }
     export function subtract(numbers) {
-      return numbers[0] - numbers.slice(1).reduce((diff, num) => diff - num, 0)
-
+      return numbers.slice(1).reduce((result, num) => result - num, numbers[0]);
     }
     //check both
     export function multiply(numbers) {
@@ -11,8 +10,10 @@ export function add(numbers) {
     }
 
     export function divide(numbers) {
-      return numbers[0] / numbers.slice(1).reduce((quotient, num) => quotient / num, 1)}
-    
+      return numbers.slice(1).reduce((result, num) => {
+    if (num === 0) return NaN;
+    return result / num;
+  }, numbers[0]);}
     /*
 ===============================================================
 TODO 4: Create Math Operation Functions (in utils/operations.js)
