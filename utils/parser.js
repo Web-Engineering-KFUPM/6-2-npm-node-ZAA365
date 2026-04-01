@@ -1,11 +1,13 @@
 import _ from "lodash"
 
         export function parseNumbers(input) {
-            return{result: _.compact(_.map(input,(str)=>Number(str)))}
+          const numbers = _.map(input, (str) => Number(str));
+            return _.compact(numbers);
           }
 
           export function isValidOperation(operation) {
-            return {result: _.includes(["add","subtract","multiply","divide"],operation)}
+            const validOps = ["add","subtract","multiply","divide"];
+            return _.includes(validOps, operation);
           }
 /*===============================================================
 TODO 5: Create Parser Functions Using Lodash (in utils/parser.js)

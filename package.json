@@ -19,5 +19,6 @@
   "homepage": "https://github.com/Web-Engineering-KFUPM/6-2-npm-node-ZAA365#readme",
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "type": "module"
 }
