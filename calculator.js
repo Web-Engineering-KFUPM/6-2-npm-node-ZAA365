@@ -106,24 +106,35 @@ Hints:
 - Use a switch statement or if/else to call the appropriate operation function
 - Display the result using console.log()
 
-Example structure:
+Example structure:*/
   if (!isValidOperation(operation)) {
     console.log("Invalid operation. Use: add, subtract, multiply, or divide");
     return;
   }
 
   const nums = parseNumbers(numbers);
+  if(nums.length === 0){
+    console.log("No valid numbers provided.");
+    process.exit(1);
+  }
   let result;
 
   switch (operation) {
     case "add":
       result = add(nums);
       break;
-    // ... other cases
+    case "subtract":
+      result = subtract(nums);
+      break;
+    case "multiply":
+      result = multiply(nums);
+      break;
+    case "divide":
+      result = divide(nums);
+      break;
   }
-
   console.log(`Result: ${result}`);
-
+/*
 ===============================================================
 TODO 4: Create Math Operation Functions (in utils/operations.js)
 ===============================================================
