@@ -74,7 +74,7 @@ Hints:
 - Import lodash (the third-party package you installed)
 
 Example:*/
-  import { add, subtract,multiply,divide } from "./utils/operations.js";
+  import { add, subtract,multiply,divide } from "./utils/operation.js";
   import { parseNumbers, isValidOperation } from "./utils/parser.js";
   import _ from "lodash";
 /*

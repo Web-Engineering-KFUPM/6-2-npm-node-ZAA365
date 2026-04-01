@@ -36,8 +36,8 @@ Hints:
 - _.includes(array, value) checks if a value exists in an array
 - Create an array of valid operations: ["add", "subtract", "multiply", "divide"]
 
-Example:*/
+Example:
   export function isValidOperation(operation) {
     const validOps = ["add", "subtract", "multiply", "divide"];
     return _.includes(validOps, operation);
-  }
+  }*/
